@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "🍎🍎🍎start🍎🍎🍎"
 a=`grep 'zyj_gitLabel版本:*' ./a`
 echo $a
 version=`echo $a|grep -o '[0-9]\+'`
@@ -11,3 +11,4 @@ str2=" zyj_gitLabel版本:  "$version
 #echo $str2
 grep 'zyj_gitLabel版本:*' ./a
 sed -ig "s/$a/$str2/"  ./a
+echo "🍎🍎🍎end🍎🍎🍎"
